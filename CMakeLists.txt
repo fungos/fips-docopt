@@ -9,6 +9,10 @@ if (NOT FIPS_IMPORT)
     fips_project(fips-docopt)
 endif()
 
+message(STATUS "docopt requires EXCEPTIONS and RTTI enabled.")
+set(FIPS_EXCEPTIONS ON)
+set(FIPS_RTTI ON)
+
 fips_begin_lib(docopt)
 	fips_include_directories(docopt.cpp)
 	fips_files_ex(docopt.cpp/ docopt*.* GROUP "docopt.cpp")
