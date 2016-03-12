@@ -1,0 +1,8 @@
+#
+# fips-docopt
+#
+exports:
+    header-dirs:
+        - docopt.cpp
+    modules:
+        docopt: .
